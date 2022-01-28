@@ -1,37 +1,128 @@
+html,
 body {
     padding: 0;
     margin: 0;
+    height: 100%;
+    min-width: 100%;
+    background-color: whitesmoke;
+    color: whitesmoke;
+    overflow: hidden;
 }
 
 nav {
     background-color: rgb(26, 23, 23);
-    color: white;
     width: 100%;
+    margin-top: -19.92px;
+}
+
+nav h1 {
+    padding: 12px;
 }
 
 .contenitore div {
     background-color: grey;
     width: 140px;
     height: 100px;
-    margin: 10px;
+    margin: 10px 0px;
 }
 
 section {
     display: flex;
     justify-content: space-evenly;
+    width: 300px;
+    margin: 0 auto;
 }
 
 .contenitore {
     margin: 0 auto;
 }
 
+aside {
+    display: none;
+    min-height: 100%;
+}
+
+main {
+    margin-top: -19.92px;
+    min-height: 100%;
+}
+
+main section {
+    margin-top: 50px;
+}
+
+/* DESKTOP */
 @media screen and (min-width: 1000px) {
     .contenitore {
         display: flex;
-
     }
 
-    .contenitore div {}
+    section {
+        justify-items: center;
+        width: 600px;
+        margin: 0 auto;
+    }
 
+    main {
+        display: flex;
+    }
 
+    .contenitore div {
+        width: 160px;
+        height: 150px;
+        margin: 10px 0px 0px 10px;
+    }
+
+    aside {
+        display: block;
+        width: 20%;
+        background-color: rgb(146, 146, 146);
+    }
+
+    aside h2 {
+        text-align: center;
+        margin-bottom: 40px;
+        margin-top: 10px;
+    }
+
+    aside li {
+        list-style: none;
+        text-align: center;
+        margin: 0 auto;
+        margin: 20px 0px 20px 0px;
+        padding: 5px;
+    }
+
+    aside ul {
+        width: 100%;
+        margin: 0 auto;
+        padding-left: 0px;
+    }
+
+    aside li:hover {
+        background-color: grey;
+    }
+
+    #cerchio {
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        background-color: whitesmoke;
+        display: inline-block;
+    }
+
+    #contenitore-cerchio {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    nav input {
+        float: right;
+        text-align: center;
+    }
+
+    nav button {
+        float: right;
+        margin-left: 6px;
+    }
 }
