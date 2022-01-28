@@ -15,6 +15,15 @@ nav {
     margin-top: -19.92px;
 }
 
+nav input,
+nav button {
+    display: none;
+}
+
+.bi-justify {
+    float: right;
+}
+
 nav h1 {
     padding: 12px;
 }
@@ -119,10 +128,16 @@ main section {
     nav input {
         float: right;
         text-align: center;
+        display: block;
     }
 
     nav button {
         float: right;
         margin-left: 6px;
+        display: block;
+    }
+
+    .bi-justify {
+        display: none;
     }
 }
